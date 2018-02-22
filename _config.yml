@@ -1,2 +1,7 @@
 theme: jekyll-theme-modernist
 title: Unnamed Web Site
+description: The site about nothing
+exclude: ['*.sh']
+
+plugins:
+  - jekyll-seo-tag

@@ -1,0 +1,36 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.wrapper {
+  width:90%;
+  margin:0 auto;
+  background:#DEDEDE;
+  border-radius: 8px;
+  box-shadow: rgba(#000, 0.2) 0 0 0 1px, rgba(#000, 0.45) 0 3px 10px;
+}
+
+header {
+  .site-image {
+    background-image: url(/assets/images/background.png);
+    background-blend-mode: luminosity;
+    background-repeat: repeat-x;
+    min-height: 110px;
+    vertical-align: bottom;
+    padding: 0 0 0 0;
+    width: 100%;
+    display: block;
+  }
+  div.site-title {
+    padding-top: 10px;
+    h1 {
+      display: inline;
+    }
+    span {
+      vertical-align: middle;
+      padding-left: 15px;
+    }
+  }
+  margin: 0 0 0 0;
+}

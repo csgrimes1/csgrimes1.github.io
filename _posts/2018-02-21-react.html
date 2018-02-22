@@ -1,0 +1,29 @@
+---
+layout: default
+title: Trying out React JS
+description: Trying out React JS
+extraCss: /assets/react/css/main.0a48f6cd.css
+---
+<h3>{{ page.title }}</h3>
+<p>
+I've intended for a long time to write a React application. I did not want to
+do a "Hello World"; rather, I wanted something that interacts with external data.
+</p>
+<p>Rather than writing a server side application, I chose to use RSS feeds. They
+    are freely available on the internet, and I added all the media outlets I could
+    find a normal feed link for. There's just one little problem: CORS. My React
+    application does a cross-site GET to retrieve a feed, and that's a deal breaker.
+    Luckily, I found a CORS proxy I could use, and that solved the problem.
+</p>
+<p>
+    So what good is CORS if all you need is a proxy to get around it? But I digress...
+</p>
+<p>The source code for the application can be viewed
+     <a href="https://github.com/csgrimes1/react-feed" target="_blank">here</a>. I ran
+    `npm build` and copied the artifacts in the `/build` directory here.</p>
+
+<h3>RSS Reader</h3>
+<p>Click on any news service below to load their feed.</p>
+
+<div id="root"></div>
+<script type="text/javascript" src="/assets/react/js/main.a1a03873.js"></script>
