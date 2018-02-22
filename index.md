@@ -6,9 +6,16 @@ This is where a normal person would describe the site and
 add biographical information. I plead the fifth.
 
 Here's what I wrote about:
+
+<table><tbody>
 {% for item in site.posts %}
-| * **{{ item.date | date_to_string }}**|**[{{ item.title }}]({{ item.url | absolute_url }})**|{{ item.description }}|
+<tr>
+    <td>{{ item.date | date_to_string }}</td>
+    <td><a href="{{ item.url | absolute_url }}">{{ item.title }}</a></td>
+    <td>{{ item.description }}</td>
+</tr>
 {% endfor %}
+</tbody></table>
 
 The best gif I've ever seen:
 
